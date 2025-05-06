@@ -1,6 +1,6 @@
 ## Architecture
 
-UI < - > Controller < -[model]- > Provider < -[json]- > Data Source
+UI < - > Controller < -[model]- > Provider < - > Base Provider < - > < -[json]- > Data Source
 
 Controller: GetX
 persistent storage: get_storage
