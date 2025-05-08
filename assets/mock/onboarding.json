@@ -1,0 +1,43 @@
+{
+  "statusCode": 200,
+  "success": true,
+  "data": {
+    "onboarding": [
+      {
+        "id": 1,
+        "title": "Hoş Geldiniz",
+        "description": "A.A E-Commerce'e hoş geldiniz! Binlerce ürün arasından seçim yaparak alışverişin keyfini çıkarın.",
+        "imageUrl": "https://picsum.photos/id/1/800/800",
+        "backgroundColor": "#3F51B5"
+      },
+      {
+        "id": 2,
+        "title": "Kolay Alışveriş",
+        "description": "Kullanıcı dostu arayüzümüz ile istediğiniz ürünü hızlıca bulun ve sepetinize ekleyin.",
+        "imageUrl": "https://picsum.photos/id/20/800/800",
+        "backgroundColor": "#FF9800"
+      },
+      {
+        "id": 3,
+        "title": "Güvenli Ödeme",
+        "description": "Çeşitli ödeme seçenekleri ile güvenli bir şekilde alışverişinizi tamamlayın.",
+        "imageUrl": "https://picsum.photos/id/30/800/800",
+        "backgroundColor": "#009688"
+      },
+      {
+        "id": 4,
+        "title": "Hızlı Teslimat",
+        "description": "Siparişleriniz en kısa sürede hazırlanıp adresinize teslim edilir.",
+        "imageUrl": "https://picsum.photos/id/40/800/800",
+        "backgroundColor": "#E91E63"
+      },
+      {
+        "id": 5,
+        "title": "Başlayalım",
+        "description": "Hemen üye olun veya misafir olarak devam edin ve alışverişe başlayın!",
+        "imageUrl": "https://picsum.photos/id/50/800/800",
+        "backgroundColor": "#4CAF50"
+      }
+    ]
+  }
+}

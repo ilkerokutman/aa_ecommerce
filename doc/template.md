@@ -5,6 +5,7 @@
 * Category
     * Product List
         * Product Details
+            * Product Gallery
 * Account
     * Sign In
     * Sign Up

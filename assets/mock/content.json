@@ -1,0 +1,32 @@
+{
+  "statusCode": 200,
+  "success": true,
+  "data": {
+    "contents": [
+      {
+        "id": 1,
+        "title": "Hakkımızda",
+        "slug": "about",
+        "html": "<h1>A.A E-Commerce Hakkında</h1><p>A.A E-Commerce, 2020 yılında kurulmuş, müşterilerine kaliteli ürünleri uygun fiyatlarla sunmayı hedefleyen bir e-ticaret platformudur.</p><p>Misyonumuz, müşterilerimize en iyi alışveriş deneyimini sunmak ve onların ihtiyaçlarını en hızlı şekilde karşılamaktır.</p><h2>Vizyonumuz</h2><p>Türkiye'nin en güvenilir ve tercih edilen e-ticaret platformu olmak.</p><h2>Değerlerimiz</h2><ul><li>Müşteri memnuniyeti</li><li>Kalite</li><li>Güvenilirlik</li><li>Yenilikçilik</li><li>Sürdürülebilirlik</li></ul>"
+      },
+      {
+        "id": 2,
+        "title": "Gizlilik Politikası",
+        "slug": "privacy-policy",
+        "html": "<h1>Gizlilik Politikası</h1><p>A.A E-Commerce olarak kişisel verilerinizin gizliliğini önemsiyoruz. Bu gizlilik politikası, hizmetlerimizi kullanırken hangi bilgileri topladığımızı ve bu bilgileri nasıl kullandığımızı açıklamaktadır.</p><h2>Toplanan Bilgiler</h2><p>Sitemize kayıt olurken ve alışveriş yaparken aşağıdaki bilgileri topluyoruz:</p><ul><li>Ad ve soyadı</li><li>E-posta adresi</li><li>Telefon numarası</li><li>Teslimat ve fatura adresleri</li><li>Ödeme bilgileri</li></ul><h2>Bilgilerin Kullanımı</h2><p>Topladığımız bilgileri aşağıdaki amaçlar için kullanıyoruz:</p><ul><li>Siparişlerinizi işleme koymak ve yönetmek</li><li>Müşteri hizmetleri sağlamak</li><li>Ürünlerimiz ve hizmetlerimiz hakkında bilgi vermek</li><li>Sitemizi ve hizmetlerimizi geliştirmek</li></ul><h2>Bilgilerin Paylaşımı</h2><p>Kişisel bilgilerinizi, yasal zorunluluklar dışında üçüncü taraflarla paylaşmıyoruz.</p>"
+      },
+      {
+        "id": 3,
+        "title": "Kullanım Şartları",
+        "slug": "terms-and-conditions",
+        "html": "<h1>Kullanım Şartları</h1><p>A.A E-Commerce web sitesini kullanarak aşağıdaki şartları kabul etmiş sayılırsınız.</p><h2>Hesap Oluşturma</h2><p>Sitemizden alışveriş yapabilmek için bir hesap oluşturmanız gerekmektedir. Hesap bilgilerinizin güvenliğinden siz sorumlusunuz.</p><h2>Ürünler ve Fiyatlandırma</h2><p>Ürün fiyatları ve stok durumu önceden haber verilmeksizin değiştirilebilir. Fiyatlara KDV dahildir.</p><h2>Sipariş ve Ödeme</h2><p>Siparişleriniz, ödeme onayı alındıktan sonra işleme alınır. Ödeme işlemleri güvenli bir şekilde gerçekleştirilir.</p><h2>İade ve Değişim</h2><p>Satın aldığınız ürünleri, teslim tarihinden itibaren 14 gün içinde iade edebilirsiniz. İade koşulları için lütfen İade Politikası sayfamızı ziyaret edin.</p><h2>Fikri Mülkiyet</h2><p>Sitemizde yer alan tüm içerikler, A.A E-Commerce'e aittir ve izinsiz kullanılamaz.</p>"
+      },
+      {
+        "id": 4,
+        "title": "Sıkça Sorulan Sorular",
+        "slug": "faq",
+        "html": "<h1>Sıkça Sorulan Sorular</h1><h2>Siparişim ne zaman teslim edilecek?</h2><p>Siparişleriniz genellikle 1-3 iş günü içinde kargoya verilir ve bulunduğunuz bölgeye göre 1-5 iş günü içinde teslim edilir.</p><h2>Ödeme seçenekleri nelerdir?</h2><p>Kredi kartı, banka kartı, havale/EFT ve kapıda ödeme seçeneklerimiz mevcuttur.</p><h2>Ürün iade edebilir miyim?</h2><p>Evet, ürünleri teslim tarihinden itibaren 14 gün içinde iade edebilirsiniz. İade etmek istediğiniz ürünün kullanılmamış ve orijinal ambalajında olması gerekmektedir.</p><h2>Kargo ücreti ne kadar?</h2><p>150 TL ve üzeri alışverişlerde kargo ücretsizdir. 150 TL altındaki siparişlerde 19.99 TL kargo ücreti alınmaktadır.</p><h2>Siparişimi nasıl takip edebilirim?</h2><p>Hesabınıza giriş yaptıktan sonra 'Siparişlerim' bölümünden siparişinizin durumunu takip edebilirsiniz. Ayrıca, kargoya verildikten sonra size SMS ve e-posta ile takip numarası gönderilecektir.</p>"
+      }
+    ]
+  }
+}

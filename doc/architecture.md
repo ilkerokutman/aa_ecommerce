@@ -77,6 +77,9 @@ ui: flutter_svg, material_icons, flutter_launcher_icons, native_splash_screen
                     - my_favorites_screen.dart
                     - my_reviews_screen.dart
                     - widget
+                - middlewares
+                    - profile_middleware.dart
+                    - orders_middleware.dart
                 - data
                     - models
                         - singin_request.dart
@@ -100,6 +103,9 @@ ui: flutter_svg, material_icons, flutter_launcher_icons, native_splash_screen
                     - product_gallery_screen.dart
                     - widget
                         - price_display_widget.dart
+                - middlewares
+                    - product_list_middleware.dart
+                    - product_details_middleware.dart
                 - data
                     - models
                         - product.dart
@@ -114,7 +120,6 @@ ui: flutter_svg, material_icons, flutter_launcher_icons, native_splash_screen
             - content
                 - screens
                     - splash_screen.dart
-                    - onboarding_screen.dart
                     - about_screen.dart
                     - help_screen.dart
                     - contact_screen.dart
@@ -122,6 +127,8 @@ ui: flutter_svg, material_icons, flutter_launcher_icons, native_splash_screen
                     - terms_and_conditions_screen.dart
                     - faq_screen.dart
                     - widget
+                - middlewares
+                    - content_middleware.dart
                 - data
                     - models
                         - content.dart
@@ -129,5 +136,18 @@ ui: flutter_svg, material_icons, flutter_launcher_icons, native_splash_screen
                         - content_controller.dart
                     - providers
                         - content_provider.dart
+            - onboarding
+                - screens
+                    - onboarding_screen.dart
+                    - splash_screen.dart
+                - middlewares
+                    - onboarding_middleware.dart
+                - data
+                    - models
+                        - onboarding.dart
+                    - controllers
+                        - onboarding_controller.dart
+                    - providers
+                        - onboarding_provider.dart
                     
     

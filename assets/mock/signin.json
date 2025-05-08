@@ -1,0 +1,9 @@
+{
+    "statusCode": 200,
+    "success": true,
+    "data": {
+        "accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwibmFtZSI6IkFobWV0IFnEsWxtYXoiLCJlbWFpbCI6ImFobWV0LnlpbG1hekBleGFtcGxlLmNvbSIsImlhdCI6MTY4MzU0NTYwMCwiZXhwIjoxNjgzNTQ5MjAwfQ.7kKD0ril4mCzPLPgFMk9LxYxgwpLYYW8GF1QZX-Nw9A",
+        "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiaWF0IjoxNjgzNTQ1NjAwLCJleHAiOjE2ODYxMzc2MDB9.NWI3NmM2ZTUtNDI0MC00YWQ3LTlkMzYtMDZhZjhjOGQ3MmEx",
+        "expiresOn": 360000
+    }
+}

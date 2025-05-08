@@ -1,0 +1,72 @@
+{
+  "statusCode": 200,
+  "success": true,
+  "data": {
+    "orders": [
+      {
+        "id": 1,
+        "orderNumber": "ORD-2025-0001",
+        "date": "2025-04-15T14:30:00",
+        "status": "shipped",
+        "totalAmount": 3799.97,
+        "paymentMethod": {
+          "id": 1,
+          "type": "credit_card",
+          "title": "Ziraat Bankası",
+          "cardNumber": "**** **** **** 5678"
+        },
+        "shippingAddress": {
+          "id": 1,
+          "title": "Ev",
+          "fullAddress": "Atatürk Caddesi No:123 Daire:5, Kadıköy, İstanbul",
+          "postalCode": "34710",
+          "city": "İstanbul",
+          "district": "Kadıköy"
+        },
+        "items": [
+          {
+            "id": 1,
+            "productId": 5,
+            "title": "Slim Fit Kot Pantolon",
+            "image": "https://picsum.photos/id/13/800/800",
+            "price": 499.99,
+            "quantity": 2,
+            "totalPrice": 999.98
+          },
+          {
+            "id": 2,
+            "productId": 8,
+            "title": "Yüz Bakım Seti",
+            "image": "https://picsum.photos/id/23/800/800",
+            "price": 699.99,
+            "quantity": 1,
+            "totalPrice": 699.99
+          },
+          {
+            "id": 3,
+            "productId": 9,
+            "title": "Profesyonel Koşu Ayakkabısı",
+            "image": "https://picsum.photos/id/25/800/800",
+            "price": 1299.99,
+            "quantity": 1,
+            "totalPrice": 1299.99
+          },
+          {
+            "id": 4,
+            "productId": 4,
+            "title": "Deri Ceket",
+            "image": "https://picsum.photos/id/11/800/800",
+            "price": 2499.99,
+            "quantity": 0,
+            "totalPrice": 0,
+            "note": "Stokta olmadığı için iptal edildi"
+          }
+        ],
+        "trackingNumber": "TR123456789",
+        "shippingCompany": "Aras Kargo",
+        "estimatedDeliveryDate": "2025-04-20T00:00:00",
+        "notes": "Lütfen kapıda bırakmayın."
+      }
+    ]
+  }
+}
