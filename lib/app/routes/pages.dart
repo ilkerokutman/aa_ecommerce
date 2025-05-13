@@ -1,3 +1,9 @@
+import 'package:aa_ecommerce/app/features/account/screens/my_addresses_screen.dart';
+import 'package:aa_ecommerce/app/features/account/screens/my_favorites_screen.dart';
+import 'package:aa_ecommerce/app/features/account/screens/my_payment_methods_screen.dart';
+import 'package:aa_ecommerce/app/features/account/screens/profile_screen.dart';
+import 'package:aa_ecommerce/app/features/account/screens/singin_screen.dart';
+import 'package:aa_ecommerce/app/features/account/screens/splash_screen.dart';
 import 'package:aa_ecommerce/app/features/onboarding/data/middlewares/onboarding_middleware.dart';
 import 'package:aa_ecommerce/app/features/onboarding/screens/onboarding_screen.dart';
 import 'package:aa_ecommerce/app/features/onboarding/screens/splash_screen.dart';
@@ -8,6 +14,7 @@ import 'package:aa_ecommerce/app/routes/routes.dart';
 import 'package:get/get.dart';
 
 final List<GetPage> getPages = [
+  /// MARK: PRODUCT
   GetPage(
     name: Routes.home,
     page: () => HomeScreen(),
@@ -15,7 +22,7 @@ final List<GetPage> getPages = [
   ),
   GetPage(name: Routes.fetchProducts, page: () => ProductListSplashScreen()),
 
-  ///
+  /// MARK: ONBOARDING
   GetPage(
     name: Routes.onboarding,
     page: () => OnboardingScreen(),
@@ -26,5 +33,11 @@ final List<GetPage> getPages = [
     page: () => FetchOnboardingDataSplashScreen(),
   ),
 
-  
+  /// MARK: ACCOUNT
+  GetPage(name: Routes.signIn, page: () => SinginScreen()),
+  GetPage(name: Routes.fetchProfile, page: () => FetchProfileSplashScreen()),
+  GetPage(name: Routes.profile, page: () => ProfileScreen()),
+  GetPage(name: Routes.myAddresses, page: () => MyAddressesScreen()),
+  GetPage(name: Routes.myPaymentMethods, page: () => MyPaymentMethodsScreen()),
+  GetPage(name: Routes.myFavorites, page: () => MyFavoritesScreen()),
 ];

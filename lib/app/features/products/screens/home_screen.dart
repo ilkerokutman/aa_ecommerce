@@ -1,4 +1,5 @@
 import 'package:aa_ecommerce/app/core/constants/keys.dart';
+import 'package:aa_ecommerce/app/features/account/data/controllers/account_controller.dart';
 import 'package:aa_ecommerce/app/features/products/data/controllers/product_controller.dart';
 import 'package:aa_ecommerce/app/routes/routes.dart';
 import 'package:flutter/material.dart';
@@ -16,10 +17,20 @@ class HomeScreen extends StatelessWidget {
           appBar: AppBar(
             actions: [
               IconButton(
+                icon: Icon(Icons.person),
+                onPressed: () {
+                  Get.toNamed(Routes.profile);
+                },
+              ),
+              IconButton(
                 icon: Icon(Icons.logout),
                 onPressed: () async {
                   final box = GetStorage();
                   await box.write(Keys.didCompleteOnboarding, false);
+
+                  final AccountController accountController = Get.find();
+                  await accountController.signOut();
+
                   Get.offAllNamed(Routes.home);
                 },
               ),

@@ -3191,6 +3191,89 @@ class BaseProvider {
           ],
         });
 
+      case Keys.apiUrlProfile:
+        return GenericApiResponse.fromMap({
+          "statusCode": 200,
+          "success": true,
+          "data": {
+            "user": {
+              "id": 1,
+              "name": "Ahmet Yılmaz",
+              "email": "ahmet.yilmaz@example.com",
+              "phone": "+90 555 123 4567",
+              "avatar": "https://randomuser.me/api/portraits/men/1.jpg",
+              "memberSince": "2023-05-15T10:30:00",
+            },
+            "addresses": [
+              {
+                "id": 1,
+                "title": "Ev",
+                "fullAddress":
+                    "Atatürk Caddesi No:123 Daire:5, Kadıköy, İstanbul",
+                "postalCode": "34710",
+                "city": "İstanbul",
+                "district": "Kadıköy",
+                "isDefault": true,
+              },
+              {
+                "id": 2,
+                "title": "İş",
+                "fullAddress":
+                    "Levent Plaza Kat:8 No:42, Levent, Beşiktaş, İstanbul",
+                "postalCode": "34330",
+                "city": "İstanbul",
+                "district": "Beşiktaş",
+                "isDefault": false,
+              },
+              {
+                "id": 3,
+                "title": "Yazlık",
+                "fullAddress": "Deniz Manzara Sitesi No:7, Çeşme, İzmir",
+                "postalCode": "35930",
+                "city": "İzmir",
+                "district": "Çeşme",
+                "isDefault": false,
+              },
+            ],
+            "paymentMethods": [
+              {
+                "id": 1,
+                "type": "credit_card",
+                "title": "Ziraat Bankası",
+                "cardNumber": "**** **** **** 5678",
+                "cardHolder": "Ahmet Yılmaz",
+                "expiryDate": "05/27",
+                "isDefault": false,
+              },
+              {
+                "id": 2,
+                "type": "credit_card",
+                "title": "Garanti BBVA",
+                "cardNumber": "**** **** **** 1234",
+                "cardHolder": "Ahmet Yılmaz",
+                "expiryDate": "11/26",
+                "isDefault": true,
+              },
+              {
+                "id": 3,
+                "type": "debit_card",
+                "title": "İş Bankası",
+                "cardNumber": "**** **** **** 9012",
+                "cardHolder": "Ahmet Yılmaz",
+                "expiryDate": "08/28",
+                "isDefault": false,
+              },
+            ],
+            "favorites": [1, 15, 27, 42, 56, 78, 92, 105, 137, 168],
+            "recentlyViewed": [42, 56, 78, 92, 105, 137, 168, 175, 189, 192],
+            "notifications": {
+              "email": true,
+              "sms": true,
+              "push": true,
+              "promotions": true,
+            },
+          },
+        });
       default:
         return GenericApiResponse(
           success: false,
@@ -3203,4 +3286,35 @@ class BaseProvider {
   }
 
   // post
+  static Future<GenericApiResponse> post(
+    String url,
+    Map<String, dynamic> data,
+  ) async {
+    await Future.delayed(Duration(milliseconds: 20));
+    // final response = await getDio().post(url, data: data);
+
+    // return GenericApiResponse.fromMap(response.data);
+
+    switch (url) {
+      case Keys.apiUrlSignIn:
+        return GenericApiResponse.fromMap({
+          "statusCode": 200,
+          "success": true,
+          "data": {
+            "accessToken":
+                "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwibmFtZSI6IkFobWV0IFnEsWxtYXoiLCJlbWFpbCI6ImFobWV0LnlpbG1hekBleGFtcGxlLmNvbSIsImlhdCI6MTY4MzU0NTYwMCwiZXhwIjoxNjgzNTQ5MjAwfQ.7kKD0ril4mCzPLPgFMk9LxYxgwpLYYW8GF1QZX-Nw9A",
+            "refreshToken":
+                "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiaWF0IjoxNjgzNTQ1NjAwLCJleHAiOjE2ODYxMzc2MDB9.NWI3NmM2ZTUtNDI0MC00YWQ3LTlkMzYtMDZhZjhjOGQ3MmEx",
+            "expiresOn": 360000,
+          },
+        });
+      default:
+        return GenericApiResponse(
+          success: false,
+          statusCode: 404,
+          message: 'Not Found',
+          errors: [],
+        );
+    }
+  }
 }
