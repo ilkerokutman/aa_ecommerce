@@ -1,6 +1,7 @@
 import 'package:aa_ecommerce/app/core/constants/keys.dart';
 import 'package:aa_ecommerce/app/features/account/data/controllers/account_controller.dart';
 import 'package:aa_ecommerce/app/features/products/data/controllers/product_controller.dart';
+import 'package:aa_ecommerce/app/features/shared/components/bottom_bar.dart';
 import 'package:aa_ecommerce/app/routes/routes.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -44,6 +45,7 @@ class HomeScreen extends StatelessWidget {
                 ),
             itemCount: pc.products.length,
           ),
+          bottomNavigationBar: BottomBarWidget(),
         );
       },
     );

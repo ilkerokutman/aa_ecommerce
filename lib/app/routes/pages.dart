@@ -8,7 +8,11 @@ import 'package:aa_ecommerce/app/features/onboarding/data/middlewares/onboarding
 import 'package:aa_ecommerce/app/features/onboarding/screens/onboarding_screen.dart';
 import 'package:aa_ecommerce/app/features/onboarding/screens/splash_screen.dart';
 import 'package:aa_ecommerce/app/features/products/middlewares/home_middleware.dart';
+import 'package:aa_ecommerce/app/features/products/screens/basket_screen.dart';
+import 'package:aa_ecommerce/app/features/products/screens/category_screen.dart';
 import 'package:aa_ecommerce/app/features/products/screens/home_screen.dart';
+import 'package:aa_ecommerce/app/features/products/screens/product_detail_screen.dart';
+import 'package:aa_ecommerce/app/features/products/screens/product_list_screen.dart';
 import 'package:aa_ecommerce/app/features/products/screens/splash_screen.dart';
 import 'package:aa_ecommerce/app/routes/routes.dart';
 import 'package:get/get.dart';
@@ -21,6 +25,10 @@ final List<GetPage> getPages = [
     middlewares: [HomeMiddleware()],
   ),
   GetPage(name: Routes.fetchProducts, page: () => ProductListSplashScreen()),
+  GetPage(name: Routes.categories, page: () => CategoryScreen()),
+  GetPage(name: Routes.productList, page: () => ProductListScreen()),
+  GetPage(name: Routes.productDetail, page: () => ProductDetailScreen()),
+  GetPage(name: Routes.basket, page: () => BasketScreen()),
 
   /// MARK: ONBOARDING
   GetPage(

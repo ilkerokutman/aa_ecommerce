@@ -77,6 +77,17 @@ class AccountController extends GetxController {
     update();
     Get.offAllNamed(Routes.home);
   }
+
+  void toggleFavorite(int productId) {
+    if (profile == null) return;
+    if (profile!.favorites.contains(productId)) {
+      _profile.value!.favorites.remove(productId);
+    } else {
+      _profile.value!.favorites.add(productId);
+    }
+    update();
+  }
+
   //#endregion
 
   //#region MARK: Signin

@@ -1,0 +1,16 @@
+enum OrderStatus {
+  basket,
+  awaitingAddress,
+  awaitingPaymentMethod,
+  awaitingApproval,
+  inTransaction,
+  unableToComplete,
+  paymentReceived,
+  packed,
+  shipped,
+  delivered,
+  cancelled,
+  deleted,
+  completed,
+  archived,
+}

@@ -2,6 +2,9 @@ class Routes {
   static const String home = '/';
   static const String categories = '/categories';
   static const String products = '/products';
+  static const String productList = '/product-list';
+  static const String productDetail = '/product-detail';
+  static const String basket = '/basket';
   static const String profile = '/profile';
   static const String signIn = '/sign-in';
   static const String signUp = '/sign-up';
